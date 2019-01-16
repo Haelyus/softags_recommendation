@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <h2 style = "text-align: center;">Tags Recommendation</h2>
+		
+      {% for message in form.title.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.body.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+            
+      <form action = "http://localhost:8080/sof" method = post>
+         <fieldset>
+            <legend>Question Details</legend>
+            {{ form.hidden_tag() }}
+            
+            <div style = font-size:15px; font-weight:bold; margin-left:180px;>
+               {{ form.title.label }}<br>
+			   {{ form.title(size=162) }}
+			   <br>
+               
+               {{ form.body.label }}<br>
+			   {{ form.body(cols="144", rows="20") }}
+			   <br>
+               
+               {{ form.submit }}
+            </div>
+            
+         </fieldset>
+      </form>
+      
+   </body>
+</html>
