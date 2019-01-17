@@ -1,1 +1,3 @@
 perluniprops
+punkt
+stopwords
