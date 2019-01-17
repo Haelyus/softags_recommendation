@@ -1,3 +1,2 @@
-perluniprops
 punkt
 stopwords
