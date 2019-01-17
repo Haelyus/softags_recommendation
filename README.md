@@ -1,4 +1,4 @@
-# Tags_recommendation
+# Softags_recommendation
 
-### Route about the tags recommendations :
-* https://mytagsrecommendation.herokuapp.com/sof
+### Route about the sof tags recommendations :
+* https://mysoftagsrecommendation.herokuapp.com/sof
